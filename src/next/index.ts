@@ -4,4 +4,4 @@ const NextComponent = {
   SEO,
 };
 
-export default NextComponent;
+export { NextComponent as default };

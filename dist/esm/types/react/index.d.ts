@@ -4,4 +4,4 @@ declare const ReactComponent: {
     Wrap: import("react").FC<import("./Wrap/Wrap.types").MotionedWrapComponentProps>;
     Content: import("react").FC<import("./Content/Content.types").MotionedContentComponentProps>;
 };
-export default ReactComponent;
+export { ReactComponent as default };

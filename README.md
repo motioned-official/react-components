@@ -25,11 +25,9 @@ After installation you should be able to see in your `package.json` file the fol
 
 ```json
 {
-    ...
-    "dependencies": {
-        ...
-         "@motioned-official/react-components": "^<version-tag>",
-    }
+  "dependencies": {
+    "@motioned-official/react-components": "^<version-tag>"
+  }
 }
 ```
 
@@ -41,9 +39,7 @@ After installation you should be able to see in your `package.json` file the fol
 
 ```jsx
 // Example.jsx
-import Motioned from "@motioned-official/react-components";
-// or you can destructur while importing
-// import {MReact} from "@motioned-official/react-components"
+import {MReact} from "@motioned-official/react-components"
 const ExampleComponent = () => {
     return (
         <MReact.Section id="hero">
@@ -60,9 +56,7 @@ export default ExampleComponent;
 
 ```jsx
 // Example.tsx
-import Motioned from "@motioned-official/react-components";
-// or you can destructur while importing
-// import {MReact} from "@motioned-official/react-components"
+import {MReact} from "@motioned-official/react-components"
 
 interface ExampleComponentProps {
     title?: string;
@@ -85,8 +79,7 @@ export default ExampleComponent;
 
 ```jsx
 // pages/index.jsx
-import Motioned from "@motioned-official/react-components";
-// import {MNext, MReact} from "@motioned-official/react-components"
+import { MNext, MReact } from "@motioned-official/react-components";
 
 const indexMeta = {
   title: {
@@ -122,8 +115,7 @@ export default Home;
 
 ```jsx
 // pages/index.tsx
-import Motioned from "@motioned-official/react-components";
-// import {MNext, MReact} from "@motioned-official/react-components"
+import { MNext, MReact } from "@motioned-official/react-components";
 import type { NextPage } from "next";
 
 const indexMeta = {

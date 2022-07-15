@@ -7,4 +7,4 @@ const ReactComponent = {
   Wrap,
   Content,
 };
-export default ReactComponent;
+export { ReactComponent as default };

@@ -2,22 +2,6 @@
 import * as react from 'react';
 import { MouseEventHandler } from 'react';
 
-interface MotionedSEOComponentProps {
-    title: {
-        subString?: string;
-        default: string;
-        joinBy?: string;
-    };
-    meta?: {
-        keywords?: {
-            words: string[];
-            joinBy: string;
-        };
-        description?: string;
-    };
-    children: React.ReactNode;
-}
-
 interface MotionedContentComponentProps {
     id?: string;
     displayType: 'inline' | 'block';
@@ -39,15 +23,30 @@ interface MotionedSectionComponentProps {
     children: JSX.Element;
 }
 
-declare const Motioned: {
-    MReact: {
-        Section: react.FC<MotionedSectionComponentProps>;
-        Wrap: react.FC<MotionedWrapComponentProps>;
-        Content: react.FC<MotionedContentComponentProps>;
-    };
-    MNext: {
-        SEO: react.FC<MotionedSEOComponentProps>;
-    };
+declare const ReactComponent: {
+    Section: react.FC<MotionedSectionComponentProps>;
+    Wrap: react.FC<MotionedWrapComponentProps>;
+    Content: react.FC<MotionedContentComponentProps>;
 };
 
-export { Motioned as default };
+interface MotionedSEOComponentProps {
+    title: {
+        subString?: string;
+        default: string;
+        joinBy?: string;
+    };
+    meta?: {
+        keywords?: {
+            words: string[];
+            joinBy: string;
+        };
+        description?: string;
+    };
+    children: React.ReactNode;
+}
+
+declare const NextComponent: {
+    SEO: react.FC<MotionedSEOComponentProps>;
+};
+
+export { NextComponent as MNext, ReactComponent as MReact };

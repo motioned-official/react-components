@@ -1,8 +1,2 @@
-import NextComponent from "./next";
-import ReactComponent from "./react";
-
-const Motioned = {
-  MReact: ReactComponent,
-  MNext: NextComponent,
-};
-export default Motioned;
+export { default as MReact } from "./react";
+export { default as MNext } from "./next";
