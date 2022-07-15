@@ -24,12 +24,10 @@ yarn add @motioned-official/react-components
 After installation you should be able to see in your `package.json` file the following dependency list.
 
 ```json
-// package.json
 {
-    ...,
+    ...
     "dependencies": {
-        ...,
-        // <version-tag> be something like "^1.0.3"
+        ...
          "@motioned-official/react-components": "^<version-tag>",
     }
 }
@@ -60,7 +58,7 @@ const ExampleComponent = () => {
 export default ExampleComponent;
 ```
 
-```tsx
+```jsx
 // Example.tsx
 import Motioned from "@motioned-official/react-components";
 // or you can destructur while importing
@@ -122,7 +120,7 @@ const Home = () => {
 export default Home;
 ```
 
-```tsx
+```jsx
 // pages/index.tsx
 import Motioned from "@motioned-official/react-components";
 // import {MNext, MReact} from "@motioned-official/react-components"
